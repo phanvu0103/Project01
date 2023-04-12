@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
 }
+html,
+body {
+    scroll-behavior: smooth;
+    /* scroll(cuộn) -behavior(hành vi): smooth (mượn mà) */
+}
 
 html {
     font-size: 62.5%;
@@ -22,7 +27,7 @@ a {
 
 .btn {
     display: inline-block;
-    width: 98px;
+    min-width: 98px;
     font-weight: 500;
     font-size: 1.4rem;
     text-align: center;
@@ -31,32 +36,40 @@ a {
     border-radius: 8px;
     padding: 18px 16px;
 }
-
-btn:hover {
-    opacity: 0.9;
-}
-
-.header {
-    height: 100vh;
-    background: #e6f0ff;
-}
-
 .content {
     width: 1110px;
+    max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
 }
 
+.btn:hover {
+    opacity: 0.9;
+}
+
+.fixed-header {
+    background: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+    width: 1440px;
+    height: 736px;
+}
+
 .navbar {
     display: flex;
-    max-width: var(100 - 40);
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
 }
 
 .navbar ul {
     display: flex;
     margin-left: 50px;
+}
+
+.navbar .actions {
+    margin-left: auto;
 }
 
 .navbar ul a {
@@ -70,27 +83,63 @@ btn:hover {
     text-decoration: underline;
 }
 
-.navbar .action {
-    margin-left: auto;
-}
-
-.action-link {
+.navbar .action-link {
     font-weight: 500;
     font-size: 1.4rem;
     color: var(--primary-color);
 }
 
 .navbar .action-btn {
-    margin-left: 14px;
     padding: 13px 16px;
+    margin-left: 18px;
+    /* 07 Sửa .btn border-radius: 
+    thêm dòng
+    border-radius: 8px;
+    núp sign up*/
+    border-radius: 8px;
 }
 
-.content-1 {
-    width: 250px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    color: #687690;
+/* hero */
+.hero-wap {
+    margin-top: 1px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 90px);
+}
 
-    margin-top: 31px;
+.hero-wap .content {
+    margin-top: 138px;
+}
+
+.hero-wrap .info {
+    width: 51%;
+}
+
+.hero-wrap .sub-title {
+    margin-top: 138px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 27px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+}
+
+.hero-wap .title {
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 1.19;
+    /* or 119% */
+
+    color: #000336;
+}
+
+.hero-wap .desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    /* or 178% */
+    text-transform: capitalize;
+    color: #5a6473;
 }
