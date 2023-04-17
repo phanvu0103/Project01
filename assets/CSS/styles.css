@@ -222,3 +222,150 @@ a {
 .clients .images a:hover {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
+
+/* Guides */
+
+.guides {
+    margin-top: 40px;
+    padding: 93px 0 79px;
+}
+
+.guides .sub-title {
+    position: relative;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    /* or 100% */
+    text-align: center;
+    color: #000339;
+}
+
+.guides .sub-title::before {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%);
+    content: "";
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    background: #000339;
+    border-radius: 12px;
+}
+
+.guides .desc {
+    width: 459px;
+    max-width: 100%;
+    margin: 20px auto 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    /* or 188% */
+    text-align: center;
+    color: #5a6473;
+}
+
+.list-guides {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.guides-items {
+    margin: 0 70px;
+    text-align: center;
+}
+
+.guides-items .title {
+    margin-top: 26px;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.1;
+    /* identical to box height, or 110% */
+    color: #3b3c45;
+}
+
+.guides-items .link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #0689ff;
+}
+
+.guide-items .arrow {
+    margin-left: 8px;
+}
+
+.guides-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.guides-cta .btn {
+    min-width: 170px;
+}
+
+/* Featured */
+.featured {
+    margin-top: 41px;
+}
+
+.featured .sub-title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    /* identical to box height, or 100% */
+    color: #000339;
+}
+
+.featured .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+    display: flex;
+    align-items: flex-end;
+    color: #5a6473;
+}
+
+.featured .row {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.featured .link {
+    font-weight: 600;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #0689ff;
+}
+
+.featured .link .arrow {
+    margin-left: 8px;
+}
+
+.featured .list {
+    margin-top: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured .item {
+    margin: 0 15px;
+}
+
+.featured .title {
+    margin-top: 17px;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+    text-align: center;
+    color: #000339;
+}
